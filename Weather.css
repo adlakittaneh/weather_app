@@ -1,0 +1,156 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    color: white;
+    margin-top: 120px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    margin: 100px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+
+.dayContainer {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 500px;
+}
+
+.weatherBox {
+    background: rgba(252, 252, 252, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(246, 246, 246, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.dayBox,
+.Locations {
+    background: rgba(252, 252, 252, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(246, 246, 246, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+.btnContainer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#description {
+    margin: 15px;
+}
+
+#city {
+    margin: 15px;
+}
+
+#id1,#id2,#id3,#id4,#id5,#id6{
+    background: rgb(103, 100, 154, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    width: 90%;
+}
+
+#id1:hover,
+#id2:hover,
+#id3:hover,
+#id4:hover ,#id5:hover,#id6:hover{
+    box-shadow: 0 8px 25px rgba(246, 246, 246, 0.5);
+}
+
+#getLocation {
+    background: rgb(103, 100, 154, 0.5);
+    backdrop-filter: blur(10px);
+    width: 45%;
+    color: white;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+
+
+#getLocation:hover {
+    box-shadow: 0 8px 25px rgba(246, 246, 246, 0.5);
+}
+
+.allDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: rgba(252, 252, 252, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(246, 246, 246, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.infoContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* عمودين */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.day {
+    flex-direction: row;
+    border-bottom: 2px solid white;
+    justify-content: space-between;
+}
+
+#icon1,#icon2,#icon3,#icon4,#icon5,#icon {
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}

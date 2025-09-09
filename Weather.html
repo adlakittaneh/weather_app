@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="Weather.css">
+    </head>
+    <body>
+        <center>
+          
+        <div class="header">
+            <h1>Know today's weather </h1>
+        </div>
+        </center>
+        <div class="layout">
+            <div class="grid">
+                 <div class="dayContainer">
+                    <div class="dayBox">
+                        <h2>Five-Day Forecast</h2>
+                        <div class="day">
+                            <span>Day1</span>
+                            <img src="cloud.png" id="icon1">
+                            <span> 29<sup>°</sup> C </span>
+                        </div> 
+                        <div class="day">
+                            <span>Day2</span>
+                            <img src="sun.png" id="icon2">
+                            <span> 29<sup>°</sup> C </span>
+                        </div> 
+                        <div class="day">
+                            <span>Day3</span>
+                            <img src="cloud.png" id="icon3">
+                            <span> 29<sup>°</sup> C </span>
+                        </div> 
+                        <div class="day">
+                            <span>Day4</span>
+                            <img src="sun.png" id="icon4">
+                            <span> 29<sup>°</sup> C </span>
+                        </div> 
+                        <div class="day">
+                            <span>Day5</span>
+                            <img src="cloud.png" id="icon5">
+                            <span> 29<sup>°</sup> C </span>
+                        </div>     
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="weatherBox">
+                        <img src="cloud.png" id="icon">
+                        <h2 id="weatherDegree"> weather Degree </h2>
+                        <span id="description"> Weather Description</span>
+                        <span id="city">City</span>
+                        <div class="btnContainer">
+                            <button id="getLocation">Get Location</button>
+                        </div>
+                        <div class="infoContainer">
+                              <div class="allDiv">
+                            <span>Humidity</span>
+                            <span> 44% </span>
+                        </div>
+                        <div class="allDiv">
+                            <span>Wind Speed</span>
+                            <span> 5.58 km/h </span>
+                        </div>
+                         <div class="allDiv">
+                            <span>Now Temperature</span>
+                            <span> 29<sup>°</sup> C </span>
+                        </div>
+                        <div class="allDiv">
+                            <span>Pressure</span>
+                            <span> 1007 hPa </span>
+                        </div>
+                        </div>    
+                    </div>
+
+                </div>
+                <div class="dayContainer">
+                    <div class="Locations">
+                        <h1>Locations</h1>
+                        <button class="btnContainer" id="id1" >Nablus</button>
+                        <button class="btnContainer" id="id2">Ramallah</button>
+                        <button class="btnContainer" id="id3">Jenin</button>
+                        <button class="btnContainer" id="id4">Tulkerm</button>
+                        <button class="btnContainer" id="id5">Bethlehem</button>
+                        <button class="btnContainer" id="id6">Hebron</button>
+                                                 
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+         <script src="Weather.js"></script>
+    </body>
+</html>
